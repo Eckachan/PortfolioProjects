@@ -16,8 +16,6 @@ From [PortfolioProject]..CovidDeaths
 Order By 2,3
 
 
---This is how you do when you encounter "Operand data type nvarchar is invalid for divide operator."
-
 Select Location, date, total_cases,total_deaths, cast(total_deaths as float)/ CAST(total_cases as float)*100 as DeathPercentage
 From [PortfolioProject]..CovidDeaths
 Where location like '%Philippines%'
